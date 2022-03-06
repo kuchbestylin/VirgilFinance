@@ -1,0 +1,256 @@
+﻿$virgil: rgb(205,113,55);
+
+
+$primary: $virgil;
+
+@mixin bggrad {
+    background: linear-gradient(to right, rgba($virgil, 0.75), rgba($virgil, 0.75));
+}
+
+@import "../bootstrap_scss/bootstrap.scss";
+
+body{
+    background-color: rgba($virgil,0.1);
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+.notice {
+    background-color: black;
+    opacity: 0.8;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    color: white;
+    text-align: center;
+    height: 1.5em;
+}
+
+.logo {
+    float: left;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    min-width: 290px;
+
+    .logoSize {
+        height: 3.5em !important;
+        opacity:.83;
+    }
+
+
+    a {
+        color: #fff;
+        text-decoration: none !important;
+
+        .firm {
+            display: inline-block;
+            padding-left: 5px;
+            font-size: 1.5rem;
+        }
+
+        .slogan {
+            margin-top: 3.5em;
+            font-weight: 900;
+            line-height: 1em;
+            font-size: .5rem;
+
+            b {
+                padding-left: 10px !important;
+                letter-spacing: 2px;
+                opacity: .7;
+            }
+        }
+
+        :hover {
+            opacity: 1;
+            transition-duration: unset;
+            background: unset;
+            border-radius: unset;
+        }
+
+        font-size: unset;
+        font-weight: unset;
+        font-family: unset;
+        padding: unset;
+    }
+}
+
+.first-center {
+    margin-top: 2em;
+
+    h2 {
+        font-weight: 500;
+        font-size: xx-large;
+        color: rgba(205,113,55,1);
+    }
+
+    h4 {
+        margin-top: 1em;
+        margin-bottom: 1.3em;
+        font-weight: 500
+    }
+}
+
+.scnd-center {
+    color: #fff;
+    background-color: $virgil;
+    padding: 1.2em 0;
+
+    h1 {
+        font-weight: 700;
+    }
+    /*    h4 {
+        font-size: 1;
+    }*/
+}
+.form-bg {
+    background-color: #fff;
+}
+#Nav-toggle {
+    position: absolute;
+}
+.small-form {
+    height: auto;
+    background-color: #fff;
+    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.19) !important;
+}
+.form-heading {
+    padding: 1.5em 0 2em 5px;
+    font-size: 1.3em;
+    font-weight: 900;
+    color: rgba(205,113,55,.7);
+}
+.form-dropdown {
+    background-image: linear-gradient(180deg, rgba(205, 113, 55, 0), rgba(205, 113, 55, 0.165));
+    height: 2em;
+    display: block;
+    border: 1px inset #cd7137;
+    width: 100%;
+    text-align: center;
+    color: rgb(205,113,55);
+}
+
+.form-textbox {
+    position: relative;
+    height: 2em;
+    display: block;
+    border: 1px inset rgba(205,113,55,1);
+    width: 100%;
+    text-align: center;
+    color: rgb(205,113,55);
+}
+.form-textbox:focus {
+    transition: all 300ms ease-in-out;
+    border: 1px solid $virgil;
+    outline: none;
+}
+.form-label {
+    display: block;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+#fullform {
+    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.19) !important;
+}
+.repexample {
+    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.19) !important;
+}
+.example {
+    p {
+        font-size: 16px;
+        text-align: center;
+        opacity: .75;
+    }
+}
+
+.about {
+    background-color: #fff;
+
+    .why-virgil {
+        p {
+        }
+    }
+}
+.w-c-u {
+    list-style-type: none;
+
+    li {
+        div {
+            display: flex;
+
+            .orange-tick-div {
+                height: 2.08vh;
+                width: 2vh;
+                padding: 0;
+                margin: .3em .6em 0 0;
+
+                img {
+                    opacity: .2;
+                    margin: 0;
+                    height: 2vh;
+                    min-width: 100%
+                }
+            }
+        }
+    }
+}
+.page-content {
+    color: rgba(205,113,55,1);
+    background-color: white;
+
+    table {
+        width: 100%;
+    }
+}
+.logo-footer {
+    height: 4em;
+    display: flex;
+    align-items: center;
+    color: rgba($virgil, .6);
+    min-width: 320px;
+
+    h4 {
+        padding-left: 1rem;
+        font-weight: 900;
+    }
+
+    div {
+        height: 4em;
+        width: auto;
+
+        img {
+            opacity: .7;
+            border-radius: 12%;
+            height: 100%;
+            width: auto;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+    .btn-rounded {
+        display: none;
+    }
+}
+@media (max-width: 992px) {
+    .blankstablet {
+        display: none;
+    }
+
+    #addressSeperator {
+        display: block;
+    }
+}

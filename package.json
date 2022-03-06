@@ -1,0 +1,26 @@
+{
+  "name": "virgilfinance",
+  "version": "1.0.0",
+  "description": "VirgilFin offers an easy, quick and hustle free cash loan process. No need for good credit, Personal Cash Loans Made Simple. Borrow as much as N$100,000 By Tomorrow.",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass --watch scss:assets/css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "takuchbtk@gmail.com"
+  },
+  "keywords": [
+    "Cash loans Namibia.",
+    "Get a quick loan.",
+    "Instant cash loans.",
+    "online cash loans in namibia"
+  ],
+  "author": "Takudzwa Kucherera",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.45.0"
+  }
+}
